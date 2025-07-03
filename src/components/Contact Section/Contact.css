@@ -1,0 +1,138 @@
+.contact-section {
+  background: #de8787;
+  padding: 2rem 10rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  margin: 1rem;
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subhead {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f7c6c6;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  /* width: 30%; */
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.contact-right {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.form-title {
+  text-align: center;
+  color: #f88;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background-color: #2c3e50;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    margin: 0.5rem 0;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+
+  .headline,
+  .subhead {
+    text-align: center;
+  }
+}
