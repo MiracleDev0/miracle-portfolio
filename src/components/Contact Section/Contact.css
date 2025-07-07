@@ -16,6 +16,7 @@
   justify-content: space-between;
   margin-top: 2rem;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .contact-left,
@@ -58,6 +59,8 @@
 
 .icon {
   cursor: pointer;
+  color: #000;
+  transition: color 0.3s ease;
 }
 
 .contact-right {

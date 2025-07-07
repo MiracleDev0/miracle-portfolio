@@ -6,7 +6,8 @@
 
 .about {
     background-color: #8f3c3c;
-    color: rgb(20, 20, 20);
+    /* color: rgb(20, 20, 20); */
+    color: white;
     padding: 2rem;
     font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     /* min-height: 100vh; */
@@ -83,7 +84,8 @@
     margin-left: 3rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #242222;
+    /* color: #242222; */
+    color: white;
 }
 .role a {
     color: #0a2122;
@@ -100,6 +102,8 @@
     font-size: 1rem;
     color: #242222;
     margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {

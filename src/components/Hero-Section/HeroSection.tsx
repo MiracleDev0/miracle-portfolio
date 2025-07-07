@@ -12,14 +12,13 @@ const HeroSection: React.FC = () => {
             ☰
           </div>
           <div className="nav-actions">
-            {/* <span className="moon-icon">🌙</span> */}
             <a href="#" className="resume-link">Resume</a>
             <button className="contact-btn">Contact Me</button>
           </div>
         </div>
 
         <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
-          <li className="active">Home</li>
+          <li>Home</li>
           <li>About</li>
           <li>Projects</li>
         </ul>

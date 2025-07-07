@@ -1,11 +1,15 @@
 import React from "react";
 import "./About.css";
+import SlideIn from "../SlideIn/SlideIn";
+
 const About: React.FC = () => {
   return (
     <section className="about">
       <h2>Simplicity isn't easy — it's genius.</h2>
+      <SlideIn>
       <section className="about-content">
             <img src="/miracle.png" alt="Miracle Esan" />
+            
             <div>
                 <h3>Who am I?</h3>
                 <p>
@@ -13,10 +17,12 @@ const About: React.FC = () => {
                 </p>
             </div>
       </section>
+      </SlideIn>
       <section>
         <div className="section-title">
             <h3>Technologies</h3>
         </div>
+        <SlideIn>
         <div className="tech-stack-container">
             <div className="tech-stack">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 80 80">
@@ -67,11 +73,13 @@ const About: React.FC = () => {
                 <p>Git</p>
             </div>
         </div>
+        </SlideIn>
       </section>
       <section>
         <div className="section-title">
             <h3>Work Experience</h3>
         </div>
+        <SlideIn>
         <div>
             <div>
                 <p className="role">Frontend Developer (Intern) <a href="https://academy.qucoon.com/programs" target="_blank" rel="noopener noreferrer">@Tesa, Qucoon Academy</a></p>
@@ -89,15 +97,18 @@ const About: React.FC = () => {
                 <p className="duty">Helped build and maintain company's website</p>
             </div>
         </div>
+        </SlideIn>
       </section>
       <section>
         <div className="section-title">
             <h3>Education</h3>   
         </div>
+        <SlideIn>
         <div>
             <p className="role">Bsc. Petroleum and Gas Engineering <a href="">@University of Lagos</a></p>
             <p className="timeline">2018 - 2024</p>
         </div>
+        </SlideIn>
       </section>
     </section>
   );
