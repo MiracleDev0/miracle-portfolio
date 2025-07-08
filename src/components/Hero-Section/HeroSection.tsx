@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./HeroSection.css";
+import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,17 @@ const HeroSection: React.FC = () => {
       <div className="hero-content">
         <div className="intro-text">
           <p className="hello">Hello!</p>
-          <h1 className="name">I'm Miracle Esan</h1>
+          <h1 className="name">
+            <Typewriter
+              words={["I'm Miracle Esan", "Your friendly neighborhood software engineer","Let's build something amazing together!"]}
+              loop={1}
+              cursor
+              cursorStyle="|"
+              typeSpeed={90}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h1>
           <p className="title">Software Engineer & Tech Enthusiast</p>
             <p className="bio">
               Passionate about building impactful software, I enjoy turning ideas into reality through clean code and creative problem-solving. With a keen eye for detail, I strive to deliver seamless user experiences and robust solutions.
