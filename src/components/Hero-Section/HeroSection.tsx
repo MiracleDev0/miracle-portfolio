@@ -13,14 +13,14 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="nav-actions">
             <a href="#" className="resume-link">Resume</a>
-            <button className="contact-btn">Contact Me</button>
+            <a href="#contact"><button className="contact-btn">Contact Me</button></a>
           </div>
         </div>
 
         <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
+          <a href="#home" onClick={() => setMenuOpen(false)}><li>Home</li></a>
+          <a href="#about" onClick={() => setMenuOpen(false)}><li>About</li></a>
+          <a href="#projects" onClick={() => setMenuOpen(false)}><li>Projects</li></a>
         </ul>
       </nav>
 
@@ -33,8 +33,8 @@ const HeroSection: React.FC = () => {
               Passionate about building impactful software, I enjoy turning ideas into reality through clean code and creative problem-solving. With a keen eye for detail, I strive to deliver seamless user experiences and robust solutions.
             </p>
           <div className="hero-buttons">
-            <button className="btn">About Me</button>
-            <button className="btn btn-outline">Let's Connect</button>
+            <a href="#about"><button className="btn">About Me</button></a>
+            <a href="#contact"><button className="btn btn-outline">Let's Connect</button></a>
           </div>
         </div>
 

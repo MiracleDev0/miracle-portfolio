@@ -2,29 +2,21 @@
   background-color: #383737;
   color: #fff;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
   font-size: 0.9rem;
   font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-
-.footer-nav a {
+.footer h2 {
+  background: linear-gradient(to right, #fff, #bbb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #fff;
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  color: #3a081b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .social-icons {
@@ -62,7 +54,10 @@
   .footer-nav {
     gap: 1rem;
   }
-
+  .footer h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
   .social-icons {
     gap: 0.75rem;
   }

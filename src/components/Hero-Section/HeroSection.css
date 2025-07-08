@@ -33,15 +33,22 @@
   padding: 0;
 }
 
-.nav-links li {
+.nav-links a {
+  text-decoration: none;
+  color: #7e8494;
   cursor: pointer;
   opacity: 0.7;
+  transition: color 0.3s ease;
+    /* position: relative; */
 }
 
-.nav-links .active {
-  font-weight: bold;
-  /* text-decoration: #ff8383 underline; */
-  opacity: 1;
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a.active {
+  color: white;
+  font-weight: 600;
 }
 
 .nav-actions {

@@ -90,15 +90,15 @@ const Contact: React.FC = () => {
           <form ref={form} onSubmit={sendEmail} className="contact-form">
             <label>
               Full name
-              <input type="text" name="name" placeholder="Enter your full name" required />
+              <input type="text" name="name" placeholder="Your Name" required />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="Enter your email" required />
+              <input type="email" name="email" placeholder="Your Email" required />
             </label>
             <label>
               Message
-              <textarea name="message" placeholder="Enter message" required />
+              <textarea name="message" placeholder="Tell me about your project" required />
             </label>
             <button type="submit">Send Message</button>
           </form>

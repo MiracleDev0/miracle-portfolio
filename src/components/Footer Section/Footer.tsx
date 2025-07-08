@@ -4,14 +4,14 @@ import "./Footer.css";
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <nav className="footer-nav">
+      {/* <nav className="footer-nav">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Projects</a>
         <a href="#">Resume</a>
         <a href="#">Contact Me</a>
-      </nav>
-
+      </nav> */}
+      <h2>ESAN MIRACLE</h2>
       <div className="social-icons">
         <a 
           href="https://www.linkedin.com/in/miracle-esan-57067a202/"

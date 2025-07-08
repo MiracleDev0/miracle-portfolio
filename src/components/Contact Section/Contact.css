@@ -63,6 +63,11 @@
   transition: color 0.3s ease;
 }
 
+.icon:hover {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+}
+
 .contact-right {
   background-color: #111;
   padding: 2rem;
