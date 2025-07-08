@@ -81,6 +81,16 @@
   width: 100%;
 }
 
+.resume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume svg {
+  margin-top: 0.25rem;
+}
+
 .resume-link {
   text-decoration: none;
   color: white;
