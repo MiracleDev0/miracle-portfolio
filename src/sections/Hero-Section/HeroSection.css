@@ -211,6 +211,8 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    margin-top: 5rem;
+    gap: 1.25rem;
   }
 
   .profile-photo .photo {

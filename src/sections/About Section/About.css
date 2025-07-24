@@ -112,6 +112,10 @@
 }
 
 @media (max-width: 768px) {
+    .about {
+        padding: 1rem;
+    }
+
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -122,9 +126,10 @@
         width: 150px;
         height: 150px;
     }
-
-    .about-content h3 {
-        font-size: 1.5rem;
+    
+    .role, .timeline, .duty {
+        margin-left: 0;
+        padding-inline: 1rem;
     }
 
     .about-content p {

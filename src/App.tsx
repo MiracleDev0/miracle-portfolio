@@ -1,7 +1,8 @@
-import HeroSection from "./components/Hero-Section/HeroSection";
-import About from "./components/About Section/About";
-import Contact from "./components/Contact Section/Contact";
-import Footer from "./components/Footer Section/Footer";
+import HeroSection from "./sections/Hero-Section/HeroSection";
+import About from "./sections/About Section/About";
+import ProjectsSection from "./sections/Projects Section/ProjectsSection";
+import Contact from "./sections/Contact Section/Contact";
+import Footer from "./sections/Footer Section/Footer";
 import "./App.css";
 
 const App = () => {
@@ -13,6 +14,10 @@ const App = () => {
 
       <div id="about">
         <About />
+      </div>
+
+      <div id="projects">
+        <ProjectsSection />
       </div>
 
       <div id="contact">

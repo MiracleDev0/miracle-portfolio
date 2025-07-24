@@ -1,0 +1,68 @@
+.project-card {
+  display: flex;
+  gap: 1rem;
+  background-color: #2e2d2d;
+  color: white;
+  overflow: hidden;
+  border: 1.5px solid white;
+  border-radius: 15px;
+  padding: 2rem 2rem;
+  box-shadow: 6px 6px 0 white;
+}
+
+.project-image {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #c2bfbf;
+  margin: 0 0 0.5rem 0;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #58E6D9;
+  margin: 0 0 0.5rem 0;
+}
+
+.tags span {
+  background-color: #2e2d2d;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #58E6D9;
+  border-radius: 16px;
+}
+
+.project-info button {
+  align-self: flex-start;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.project-info button:hover {
+  background-color: #222222;
+  color: white;
+}
