@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "../../components/ProjectCard";
 import { projects } from "../../data/projects";
 import "./ProjectSection.css";
+import SlideIn from "../SlideIn/SlideIn";
 
 const ProjectsSection: React.FC = () => {
   return (
@@ -14,7 +15,9 @@ const ProjectsSection: React.FC = () => {
 
       <div className="project-list">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <SlideIn key={project.id}>
+            <ProjectCard project={project} />
+          </SlideIn>
         ))}
       </div>
     </section>
