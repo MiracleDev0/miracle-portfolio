@@ -3,6 +3,8 @@ import './Contact.css';
 import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import SlideIn from '../SlideIn/SlideIn';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -12,27 +14,28 @@ const Contact: React.FC = () => {
 
     if (form.current) {
       emailjs
-        .sendForm(
-          'service_hxkvzf3',
-          'template_fsdrz2j',
-          form.current,
-          '8pt53fY9hlQ5Qv6ri' 
-        )
-        .then(
-          () => {
-            alert('Message sent successfully!');
-            form.current?.reset();
-          },
-          (error) => {
-            alert('Failed to send message. Please try again later.');
-            console.error(error);
-          }
-        );
+      .sendForm(
+        'service_hxkvzf3',
+        'template_fsdrz2j',
+        form.current,
+        '8pt53fY9hlQ5Qv6ri' 
+      )
+      .then(
+        () => {
+        toast.success('Message sent successfully!');
+        form.current?.reset();
+        },
+        (error) => {
+        toast.error('Failed to send message. Please try again later.');
+        console.error(error);
+        }
+      );
     }
   };
 
   return (
     <div className="contact-section">
+      <ToastContainer />
       <h2 className="contact-title">Contact Me</h2>
       <div className="contact-container">
         <div className="contact-left">

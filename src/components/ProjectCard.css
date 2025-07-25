@@ -37,6 +37,7 @@
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
   font-size: 0.7rem;
   color: #58E6D9;
